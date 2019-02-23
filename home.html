@@ -22,20 +22,27 @@
     }
 </style>
     <body>
-        <div class="container">
+    
+    <nav>
+    <div class="nav-wrapper">
+      <a href="portfolio.html" class="brand-logo">Portfolio</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-            <nav>
-                    <div class="nav-wrapper">
-                        <a href="#" class="brand-logo right">Portfolio</a>
-                        <ul id="nav-mobile" class="left hide-on-med-and-down">
-                            <li><a href="home.html">home</a></li>
-                            <li><a href="about.html">about</a></li>
-                          <li><a href="portfolio.html">portfolio</a></li>
-                            <li><a href="contact.html">contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+        
                 <!-- <img src="https://images.unsplash.com/photo-1471086569966-db3eebc25a59?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                     alt="" class="responsive-img" /> -->
 
@@ -45,5 +52,15 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+     
+     
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+        
+  
+ 
+      </script>
     </body>
   </html>

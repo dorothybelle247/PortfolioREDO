@@ -14,120 +14,209 @@
         body{
           background-color: pink;
         }
+        * {
+                        box-sizing: border-box;
+                      }
+                      
+                      body {
+                        background-color: #f1f1f1;
+                        padding: 20px;
+                        font-family: Arial;
+                      }
+                      
+                      /* Center website */
+                      .main {
+                        max-width: 1000px;
+                        margin: auto;
+                      }
+                      
+                      h1 {
+                        font-size: 50px;
+                        word-break: break-all;
+                      }
+                      
+                      .row {
+                        margin: 8px -16px;
+                      }
+                      
+                      /* Add padding BETWEEN each column */
+                      .row,
+                      .row > .column {
+                        padding: 8px;
+                      }
+                      
+                      /* Create four equal columns that floats next to each other */
+                      .column {
+                        float: left;
+                        width: 25%;
+                      }
+                      
+                      /* Clear floats after rows */ 
+                      .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                      }
+                      
+                      /* Content */
+                      .content {
+                        background-color: white;
+                        padding: 10px;
+                      }
+                      
+                      /* Responsive layout - makes a two column-layout instead of four columns */
+                      @media screen and (max-width: 900px) {
+                        .column {
+                          width: 50%;
+                        }
+                      }
+                      
+                      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                      @media screen and (max-width: 600px) {
+                        .column {
+                          width: 100%;
+                        }
+                      }
       </style>
     </head>
 
     <body>
 
 
-        <div class="container">
+       
+<nav>
+    <div class="nav-wrapper">
+      <a href="portfolio.html" class="brand-logo">Portfolio</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-            <nav>
-                    <div class="nav-wrapper">
-                        <a href="#" class="brand-logo right">Portfolio</a>
-                        <ul id="nav-mobile" class="left hide-on-med-and-down">
-                            <li><a href="home.html">home</a></li>
-                            <li><a href="about.html">about</a></li>
-                          <li><a href="portfolio.html">portfolio</a></li>
-                            <li><a href="contact.html">contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 
 
 
-            <div class="container">
-    
-                    <div class="row">
-                      <div class="col s12 m5">
-                        <div class="card small">
-                          <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                            <span class="card-title">Card Title</span>
-                          </div>
-                          <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                          </div>
-                          <div class="card-action">
-                            <a href="#">This is a link</a>
+
+
+                      
+                      <!-- MAIN (Center website) -->
+                      <div class="main">
+                      
+                      <h2>PORTFOLIO</h2>
+                      <p>Resize the browser window to see the responsive effect.</p>
+                      
+                      <!-- Portfolio Gallery Grid -->
+                      <div class="row">
+                        <div class="column">
+                          <div class="content">
+                            <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
                           </div>
                         </div>
-                      </div>
-                      
-                   <div class="row">
-                      <div class="col s12 m5">
-                        <div class="card small">
-                          <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                            <span class="card-title">Card Title</span>
-                          </div>
-                          <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                          </div>
-                          <div class="card-action">
-                            <a href="#">This is a link</a>
+                        <div class="column">
+                          <div class="content">
+                          <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
                           </div>
                         </div>
-                      </div>
-                     
-                    </div>   
-                      
-                      
-                      
-                      
-                    </div>
-                      
-                    <div class="row">
-                      <div class="col s12 m5">
-                        <div class="card small">
-                          <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                            <span class="card-title">Card Title</span>
-                          </div>
-                          <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                          </div>
-                          <div class="card-action">
-                            <a href="#">This is a link</a>
+                        <div class="column">
+                          <div class="content">
+                          <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
                           </div>
                         </div>
-                      </div>
-                      
-                      
-                      
-                      
-                     <div class="row">
-                      <div class="col s12 m5">
-                        <div class="card small">
-                          <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1526376043067-5af36c35cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                            <span class="card-title">Card Title</span>
-                          </div>
-                          <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                          </div>
-                          <div class="card-action">
-                            <a href="#">This is a link</a>
+                        <div class="column">
+                          <div class="content">
+                          <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
                           </div>
                         </div>
+                      <!-- END GRID -->
                       </div>
-                    </div> 
+
+
+
+                      <div class="row">
+                        <div class="column">
+                          <div class="content">
+                            <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                          </div>
+                        </div>
+                        <div class="column">
+                          <div class="content">
+                          <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                          </div>
+                        </div>
+                        <div class="column">
+                          <div class="content">
+                          <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                          </div>
+                        </div>
+                        <div class="column">
+                          <div class="content">
+                          <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                          </div>
+                        </div>
+                      <!-- END GRID -->
+                      </div>
+
+
+
+                      <div class="row">
+                        <div class="column">
+                          <div class="content">
+                            <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                          </div>
+                        </div>
+                        <div class="column">
+                          <div class="content">
+                          <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                          </div>
+                        </div>
+                        <div class="column">
+                          <div class="content">
+                          <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                          </div>
+                        </div>
+                        <div class="column">
+                          <div class="content">
+                          <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                            <h3>My Work</h3>
+                            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                          </div>
+                        </div>
+                      <!-- END GRID -->
+                      </div>
                       
                       
-                      
-                      
-                      
-                    </div>  
-                      
-                      
-                      
-                    </div>
-                               
                     
                      
       <!--JavaScript at end of body for optimized loading-->
@@ -136,5 +225,16 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+      <script>
+     
+     
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+        
+  
+ 
+      </script>
     </body>
   </html>
